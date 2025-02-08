@@ -1,15 +1,7 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe
-
-    // Validación básica
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const mensaje = document.getElementById('mensaje').value;
-
-    if (nombre && email && mensaje) {
-        alert('Gracias por tu mensaje, ' + nombre + '. Te responderé pronto.');
-        document.getElementById('contactForm').reset(); // Limpia el formulario
-    } else {
-        alert('Por favor, completa todos los campos.');
-    }
+// script.js
+document.querySelectorAll('.grid-item').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que el enlace se abra
+        alert(`Has seleccionado la categoría: ${this.querySelector('h3').textContent}`);
+    });
 });

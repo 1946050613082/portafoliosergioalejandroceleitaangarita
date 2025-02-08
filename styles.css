@@ -3,17 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #b92424;
+    color: #1f3bdd;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #3335a3;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -26,12 +31,9 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -45,13 +47,18 @@ nav ul li a:hover {
     color: #ff6347; /* Cambia el color al pasar el mouse */
 }
 
-/* Secciones */
-section {
+/* Contenido Principal */
+main {
+    flex: 1;
     padding: 20px;
-    margin: 20px;
+}
+
+section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -71,15 +78,49 @@ section p {
     color: #555;
 }
 
-/* Footer */
+/* Nuevo Contenedor Grid */
+#contenedor-grid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, 1fr);    /* 2 filas */
+    gap: 15px; /* Espacio entre elementos */
+}
+
+#contenedor-grid .grid-item {
+    background-color: #4791ff;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    display: block; /* Hace que los enlaces ocupen todo el espacio */
+}
+
+#contenedor-grid .grid-item:hover {
+    background-color: #e5533d; /* Cambia el color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+#contenedor-grid .grid-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#contenedor-grid .grid-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+/* Pie de Página */
 footer {
     text-align: center;
     padding: 15px;
     background-color: #333;
     color: #fff;
     width: 100%;
-    position: relative; /* Cambiado a relative para evitar que cubra contenido */
-    margin-top: 40px; /* Espacio antes del footer */
+    margin-top: auto; /* Mantiene el footer al final */
 }
 
 footer p {
@@ -93,46 +134,13 @@ footer p {
         font-size: 2rem;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    section {
-        margin: 10px;
-        padding: 15px;
+    #contenedor-grid .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+        grid-template-rows: repeat(3, 1fr);    /* 3 filas en móviles */
     }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Mejoras para enlaces y botones */
-a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #ff6347;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff6347;
 }
