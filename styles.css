@@ -1,33 +1,50 @@
+/* Variables CSS */
+:root {
+    --primary-color: #8de914cc;
+    --secondary-color: #be5b2d;
+    --header-bg: #ebf3ebcc;
+    --text-color: #333;
+    --text-light: #fff;
+    --hover-color: #b12209;
+    --grid-item-bg: #da1919;
+    --grid-item-hover-bg: #3de553;
+    --footer-bg: #333;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b92424;
-    color: #1f3bdd;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header */
+/* Encabezado */
 header {
-    background-color: #3335a3;
-    color: #ffffff;
-    padding: 20px;
+    background-color: var(--header-bg);
+    color: var(--text-light);
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: var(--text-color);
 }
 
-/* Navegación */
+/* Barra de navegación */
 nav ul {
     list-style: none;
     padding: 0;
@@ -37,70 +54,72 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--text-light);
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
 nav ul li a:hover {
-    color: #ff6347; /* Cambia el color al pasar el mouse */
+    color: var(--hover-color);
 }
 
-/* Contenido Principal */
+/* Contenido principal */
 main {
     flex: 1;
     padding: 20px;
 }
 
+/* Secciones */
 section {
-    background-color: #fff;
+    background-color: var(--text-light);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     padding: 20px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: var(--transition);
 }
 
 section:hover {
-    transform: translateY(-5px); /* Efecto de levantar la sección */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #333;
+    color: var(--text-color);
 }
 
 section p {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color);
 }
 
-/* Nuevo Contenedor Grid */
+/* Contenedor Grid */
 #contenedor-grid .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: repeat(2, 1fr);    /* 2 filas */
-    gap: 15px; /* Espacio entre elementos */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
 }
 
 #contenedor-grid .grid-item {
-    background-color: #4791ff;
-    color: #ffffff;
+    background-color: var(--grid-item-bg);
+    color: var(--text-light);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    display: block; /* Hace que los enlaces ocupen todo el espacio */
+    text-decoration: none;
+    display: block;
+    transition: var(--transition);
 }
 
 #contenedor-grid .grid-item:hover {
-    background-color: #e5533d; /* Cambia el color al pasar el mouse */
-    transform: scale(1.05); /* Efecto de escala */
+    background-color: var(--grid-item-hover-bg);
+    color: var(--text-color);
+    transform: scale(1.05);
 }
 
 #contenedor-grid .grid-item h3 {
@@ -113,14 +132,14 @@ section p {
     font-size: 1rem;
 }
 
-/* Pie de Página */
+/* Pie de página */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--footer-bg);
+    color: var(--text-light);
     width: 100%;
-    margin-top: auto; /* Mantiene el footer al final */
+    margin-top: auto;
 }
 
 footer p {
@@ -140,7 +159,7 @@ footer p {
     }
 
     #contenedor-grid .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
-        grid-template-rows: repeat(3, 1fr);    /* 3 filas en móviles */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }

@@ -1,0 +1,268 @@
+1. index.html
+Este es el archivo principal del portafolio. A continuación, te explico cada etiqueta y su función:
+
+Etiquetas Básicas
+<!DOCTYPE html>: Define el tipo de documento como HTML5.
+
+<html lang="es">: Define el idioma del documento (español).
+
+<head>: Contiene metadatos y enlaces a recursos externos.
+
+<meta charset="UTF-8">: Define la codificación de caracteres como UTF-8.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Hace que la página sea responsive.
+
+<title>Mi Portafolio</title>: Define el título de la página.
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">: Enlaza el archivo CSS de Bootstrap.
+
+<link rel="stylesheet" href="styles.css">: Enlaza el archivo de estilos personalizados.
+
+Encabezado (<header>)
+<header class="bg-primary text-white py-4">: Define el encabezado con un fondo azul (bg-primary), texto blanco (text-white) y padding vertical (py-4).
+
+<div class="container">: Contenedor de Bootstrap para centrar el contenido.
+
+<div class="d-flex justify-content-between align-items-center">: Flexbox para alinear el logo y el menú.
+
+<img src="images/aswd.png" width="80px" alt="Logo" class="logo">: Muestra el logo.
+
+<nav class="navbar navbar-expand-lg navbar-dark">: Define la barra de navegación.
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">: Botón para colapsar el menú en móviles.
+
+<div class="collapse navbar-collapse" id="navbarNav">: Contenedor del menú colapsable.
+
+<ul class="navbar-nav">: Lista de enlaces del menú.
+
+<li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>: Enlace a la página de inicio.
+
+Hero Section
+<section id="hero" class="bg-light py-5 text-center">: Sección de bienvenida con fondo claro (bg-light), padding vertical (py-5) y texto centrado (text-center).
+
+<img src="images/dwd.png" width="80px" alt="Imagen destacada" class="img-fluid mb-4">: Imagen destacada.
+
+<h1>Bienvenidos a Mi Portafolio</h1>: Título principal.
+
+<p class="lead">Explora mis proyectos y conoce más sobre mi trabajo.</p>: Texto descriptivo.
+
+<a href="#contacto" class="btn btn-primary btn-lg">¡Contáctame!</a>: Botón que redirige a la sección de contacto.
+
+Sección de Características
+<section id="caracteristicas" class="py-5">: Sección que muestra las características del portafolio.
+
+<div class="row">: Fila de Bootstrap para organizar las columnas.
+
+<div class="col-md-4 text-center">: Columna de 4 unidades en pantallas medianas.
+
+<img src="images/ert.png" width="80px" alt="Icono 1" class="img-fluid mb-3">: Icono de la característica.
+
+<h3>Diseño Web</h3>: Título de la característica.
+
+<p>Creación de sitios web modernos y responsivos.</p>: Descripción.
+
+Galería de Imágenes
+<section id="galeria" class="bg-light py-5">: Sección de galería con fondo claro.
+
+<div class="row">: Fila de Bootstrap para organizar las imágenes.
+
+<div class="col-md-4 mb-4">: Columna de 4 unidades.
+
+<img src="images/wqe.png" width="80px" alt="Imagen 1" class="img-fluid">: Imagen de la galería.
+
+Testimonios
+<section id="testimonios" class="py-5">: Sección de testimonios.
+
+<div class="card">: Tarjeta de Bootstrap para mostrar un testimonio.
+
+<p class="card-text">"¡Excelente trabajo! Muy profesional."</p>: Texto del testimonio.
+
+<h5 class="card-title">- Juan Pérez</h5>: Nombre del testimonio.
+
+Pie de Página (<footer>)
+<footer class="bg-dark text-white py-4">: Pie de página con fondo oscuro (bg-dark), texto blanco (text-white) y padding vertical (py-4).
+
+<p>&copy; 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados.</p>: Derechos de autor.
+
+<a href="https://www.facebook.com/" class="text-white me-3">Facebook</a>: Enlace a redes sociales.
+
+Scripts
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>: Enlaza el archivo JS de Bootstrap.
+
+<script src="script.js"></script>: Enlaza el archivo de JavaScript personalizado.
+
+2. proyectos.html
+Esta página muestra los proyectos realizados. Las etiquetas principales son:
+
+Encabezado
+Similar al de index.html, con el mismo menú de navegación.
+
+Sección de Proyectos Realizados
+<section id="proyectos">: Sección que muestra los proyectos.
+
+<div class="card">: Tarjeta de Bootstrap para cada proyecto.
+
+<h3 class="card-title">Página Web Básica</h3>: Título del proyecto.
+
+<p class="card-text">Este fue mi primer proyecto en clase...</p>: Descripción.
+
+Sección de Exploración de CSS Grid
+<section id="contenedor-grid" class="my-5">: Sección que explora CSS Grid.
+
+<div class="row row-cols-1 row-cols-md-3 g-4">: Fila de Bootstrap con 3 columnas en pantallas medianas.
+
+<a href="#" class="card h-100 text-decoration-none text-dark">: Enlace que simula una tarjeta.
+
+<h3 class="card-title">Diseño Web</h3>: Título de la categoría.
+
+Pie de Página
+Igual que en index.html.
+
+3. contacto.html
+Esta página permite a los usuarios enviar un mensaje de contacto.
+
+Formulario de Contacto
+<form id="contactForm">: Formulario de contacto.
+
+<input type="text" class="form-control" id="nombre" required>: Campo de texto para el nombre.
+
+<textarea class="form-control" id="mensaje" rows="5" required></textarea>: Área de texto para el mensaje.
+
+<button type="submit" class="btn btn-primary">Enviar</button>: Botón de envío.
+
+Feedback al Usuario
+<p id="successMessage" class="text-success text-center hidden">¡Gracias por tu mensaje!...</p>: Mensaje de éxito.
+
+<p id="errorMessage" class="text-danger text-center hidden">Por favor, completa todos los campos...</p>: Mensaje de error.
+
+Pie de Página
+Igual que en las otras páginas.
+
+4. styles.css
+Este archivo contiene los estilos personalizados para el proyecto.
+
+Variables CSS
+:root { --primary-color: #8de914cc; }: Define variables para colores, sombras y transiciones.
+
+Estilos Generales
+body { font-family: Arial, sans-serif; }: Define la fuente y el color de fondo del cuerpo.
+
+Encabezado y Navegación
+header { background-color: var(--header-bg); }: Estilos para el encabezado.
+
+nav ul li a:hover { color: var(--hover-color); }: Efecto hover en los enlaces.
+
+Secciones
+section:hover { transform: translateY(-5px); }: Efecto hover en las secciones.
+
+Contenedor Grid
+#contenedor-grid .grid-container { display: grid; }: Define un diseño de cuadrícula.
+
+Pie de Página
+footer { background-color: var(--footer-bg); }: Estilos para el pie de página.
+
+Diseño Responsivo
+@media (max-width: 768px) { ... }: Ajustes para dispositivos móviles.
+
+5. script.js
+Este archivo maneja la interactividad del proyecto.
+
+Eventos en los Grid Items
+document.querySelectorAll('.grid-item').forEach(item => { ... }): Agrega un evento click a los elementos de la cuadrícula.
+
+event.preventDefault();: Evita que el enlace se abra.
+
+const titulo = this.querySelector('h3');: Busca el título (h3) dentro del elemento clickeado.
+
+if (titulo) { ... }: Si el título existe, muestra una alerta con el texto del título.
+
+Debounce para Redimensionamiento
+function debounce(func, wait) { ... }: Función que retrasa la ejecución de otra función para optimizar el evento resize.
+
+let timeout;: Variable para almacenar el temporizador.
+
+clearTimeout(timeout);: Limpia el temporizador anterior.
+
+timeout = setTimeout(() => func.apply(this, args), wait);: Ejecuta la función después de un tiempo de espera (wait).
+
+Función handleResize
+function handleResize() { ... }: Función que se ejecuta al redimensionar la ventana.
+
+if (window.innerWidth < 768) { ... }: Si el ancho de la ventana es menor a 768px, activa el modo móvil.
+
+else { ... }: Si no, activa el modo escritorio.
+
+Eventos de Redimensionamiento y Carga
+window.addEventListener("resize", debounce(handleResize, 200));: Escucha el evento resize y ejecuta handleResize con debounce.
+
+window.addEventListener("load", handleResize);: Ejecuta handleResize al cargar la página.
+
+6. Funcionamiento General
+Navegación: El menú de navegación permite moverse entre las tres páginas.
+
+Diseño Responsivo: Usa Bootstrap y estilos personalizados para adaptarse a diferentes tamaños de pantalla.
+
+Interactividad: El script script.js maneja eventos como clics en elementos de la cuadrícula y redimensionamiento de la ventana.
+
+Estilos: Los estilos personalizados en styles.css dan un aspecto único al proyecto.
+
+
+
+FUNCIONAMIENTO GENERAL 
+
+ Funcionamiento General
+El proyecto funciona de la siguiente manera:
+
+Navegación
+El menú de navegación permite al usuario moverse entre las tres páginas (index.html, proyectos.html, contacto.html).
+
+El menú es responsive y se colapsa en dispositivos móviles.
+
+Diseño Responsivo
+El diseño se adapta a diferentes tamaños de pantalla usando Bootstrap y estilos personalizados en styles.css.
+
+En dispositivos móviles, el menú se colapsa y las columnas se ajustan para una mejor visualización.
+
+Interactividad
+Galería de Imágenes: Las imágenes se muestran en un diseño de tres columnas.
+
+Sección de CSS Grid: Las tarjetas son interactivas y muestran una alerta al hacer clic.
+
+Formulario de Contacto: Aunque no tiene lógica de envío, valida que todos los campos estén completos.
+
+Estilos Personalizados
+Los estilos personalizados en styles.css dan un aspecto único al proyecto, con colores, sombras y transiciones.
+
+Las variables CSS facilitan la consistencia y el mantenimiento del diseño.
+
+JavaScript
+El script script.js maneja la interactividad del proyecto:
+
+Eventos de Clic: Muestra una alerta con el título de la categoría seleccionada.
+
+Redimensionamiento de la Ventana: Detecta si la pantalla es móvil o de escritorio y muestra un mensaje en la consola.
+
+3. Flujo del Proyecto
+Página de Inicio (index.html):
+
+Muestra una sección de bienvenida, características, galería de imágenes y testimonios.
+
+El usuario puede navegar a otras páginas usando el menú.
+
+Página de Proyectos (proyectos.html):
+
+Muestra los proyectos realizados y una sección de exploración de CSS Grid.
+
+El usuario puede hacer clic en las tarjetas para ver una alerta con el título de la categoría.
+
+Página de Contacto (contacto.html):
+
+Muestra un formulario de contacto.
+
+El usuario puede completar y enviar el formulario (aunque no hay lógica de envío implementada).
+
+
+
+
+
+

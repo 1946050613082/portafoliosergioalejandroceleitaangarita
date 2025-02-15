@@ -1,0 +1,85 @@
+El Castillo Mágico del Portafolio
+
+Había una vez un castillo mágico llamado Portafolio, que era el hogar de un talentoso desarrollador web llamado Sergio. Este castillo no era como cualquier otro; estaba construido con código HTML, decorado con estilos CSS y animado con hechizos de JavaScript. Los visitantes podían explorar sus salas y descubrir las maravillas que Sergio había creado.
+
+La Entrada al Castillo (index.html)
+Cuando los visitantes llegaban al castillo, lo primero que veían era una gran puerta de entrada (el archivo index.html). Esta puerta estaba decorada con un logo mágico (el logo del portafolio) y un menú de navegación que les permitía elegir a dónde ir:
+
+INICIO: Los llevaba de vuelta a la entrada.
+
+PROYECTOS: Los guiaba a una sala llena de creaciones mágicas.
+
+CONTACTO: Los conducía a un lugar donde podían dejar mensajes para Sergio.
+
+
+
+
+Al cruzar la puerta, los visitantes llegaban a una sala de bienvenida (la sección Hero). Aquí, Sergio los recibía con una imagen destacada y un mensaje cálido: "Bienvenidos a Mi Portafolio. Explora mis proyectos y conoce más sobre mi trabajo." Un botón mágico les ofrecía la opción de ir directamente a la sala de contacto.
+
+La Sala de las Características
+Después de la bienvenida, los visitantes entraban en la Sala de las Características. Esta sala tenía tres altares mágicos, cada uno representando una habilidad de Sergio:
+
+Diseño Web: Un altar con una imagen brillante y la descripción: "Creación de sitios web modernos y responsivos."
+
+Desarrollo Frontend: Otro altar mostraba: "Implementación de interfaces interactivas."
+
+Optimización SEO: El tercer altar decía: "Mejora del posicionamiento en buscadores."
+
+Cada altar estaba iluminado con un resplandor especial, gracias a los estilos personalizados en styles.css.
+
+La Galería de Imágenes
+La siguiente parada era la Galería de Imágenes, una sala llena de cuadros mágicos que mostraban capturas de los proyectos de Sergio. Los visitantes podían admirar las imágenes y sentir cómo cobraban vida al pasar el cursor sobre ellas, gracias a las transiciones CSS.
+
+La Sala de los Testimonios
+En esta sala, los visitantes encontraban espejos mágicos que mostraban los testimonios de personas que habían trabajado con Sergio. Cada espejo decía cosas como:
+
+"¡Excelente trabajo! Muy profesional." – Juan Pérez.
+
+"Muy contento con los resultados." – María Gómez.
+
+"Recomendado 100%." – Carlos López.
+
+Los espejos brillaban con un suave resplandor, creando una atmósfera de confianza y profesionalismo.
+
+
+
+
+La Sala de los Proyectos (proyectos.html)
+Si los visitantes elegían la opción PROYECTOS en el menú, eran transportados a una sala secreta llena de libros mágicos (las tarjetas de proyectos). Cada libro contenía la historia de un proyecto:
+
+Página Web Básica: Un libro que contaba cómo Sergio aprendió a estructurar páginas web con HTML y CSS.
+
+Formulario de Contacto: Otro libro que narraba cómo Sergio creó un formulario funcional con JavaScript.
+
+Además, había una mesa de exploración donde los visitantes podían interactuar con tarjetas mágicas que representaban categorías como Diseño Web, JavaScript y Animaciones CSS. Al tocar una tarjeta, una voz mágica (una alerta de JavaScript) les decía: "Has seleccionado la categoría: Diseño Web."
+
+
+
+
+
+
+
+La Sala de Contacto (contacto.html)
+Si los visitantes elegían la opción CONTACTO, llegaban a una sala tranquila con un libro de mensajes (el formulario de contacto). Aquí podían escribir su nombre, correo electrónico y un mensaje para Sergio. Al intentar enviar el mensaje, el libro les decía:
+
+"¡Gracias por tu mensaje! Te responderemos pronto." (si todo estaba completo).
+
+"Por favor, completa todos los campos correctamente." (si faltaba algo).
+
+Aunque el libro no enviaba realmente el mensaje (porque no había lógica de envío), los visitantes sentían que habían dejado su huella en el castillo.
+
+
+
+
+
+El Hechizo de Redimensionamiento (script.js)
+El castillo tenía un hechizo especial que lo hacía adaptarse a cualquier tamaño de pantalla. Este hechizo era controlado por un duende mágico llamado JavaScript. El duende observaba constantemente el tamaño de la ventana del castillo:
+
+Si la ventana era pequeña (menos de 768px), el duende decía: "Modo móvil activado." y reorganizaba las salas para que fueran fáciles de explorar en dispositivos pequeños.
+
+Si la ventana era grande, el duende decía: "Modo escritorio activado." y mostraba las salas en todo su esplendor.
+
+El duende también usaba un truco de debounce para no agotarse. En lugar de reaccionar a cada pequeño cambio en el tamaño de la ventana, esperaba un momento antes de actuar, asegurándose de que todo estuviera en orden.
+
+El Final del Recorrido
+Después de explorar todas las salas, los visitantes llegaban al patio del castillo (el pie de página). Aquí encontraban un mensaje grabado en piedra: "© 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados." También había portales mágicos (enlaces a redes sociales) que los llevaban a los reinos de Facebook, Twitter e Instagram.

@@ -4,73 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Proyectos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <h1>Mis Proyectos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <img src="images/aswd.png" width="80px" alt="logo1" class="logo1">
+                <!-- Menú de navegación -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="proyectos.html">PROYECTOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <!-- Sección de Proyectos -->
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Sección de proyectos realizados -->
         <section id="proyectos">
-            <h2>Proyectos Realizados</h2>
-            <div class="proyecto">
-                <h3>Proyecto 1: Página Web Básica</h3>
-                <p>Este fue mi primer proyecto en clase, donde aprendí a estructurar una página web usando HTML y CSS.</p>
-            </div>
-            <div class="proyecto">
-                <h3>Proyecto 2: Formulario de Contacto</h3>
-                <p>En este proyecto, creé un formulario de contacto funcional utilizando HTML y JavaScript para validar los campos.</p>
+            <h2 class="text-center mb-4">Proyectos Realizados</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Página Web Básica</h3>
+                            <p class="card-text">Este fue mi primer proyecto en clase, donde aprendí a estructurar una página web usando HTML y CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Formulario de Contacto</h3>
+                            <p class="card-text">En este proyecto, creé un formulario de contacto funcional utilizando HTML y JavaScript para validar los campos.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Nueva Sección: Contenedor con 6 Elementos -->
-        <section id="contenedor-grid">
-            <h2>Explorando CSS Grid</h2>
-            <div class="grid-container">
-                <a href="#" class="grid-item">
-                    <h3>Diseño Web</h3>
-                    <p>Proyectos enfocados en diseño y maquetación web.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <h3>JavaScript</h3>
-                    <p>Proyectos que utilizan JavaScript para interactividad.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <h3>Animaciones CSS</h3>
-                    <p>Proyectos con animaciones y efectos visuales.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <h3>Responsive Design</h3>
-                    <p>Proyectos adaptados a diferentes dispositivos.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <h3>Frameworks</h3>
-                    <p>Proyectos que utilizan frameworks como React o Bootstrap.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <h3>Backend</h3>
-                    <p>Proyectos que involucran desarrollo backend.</p>
-                </a>
+        <!-- Sección de exploración de CSS Grid -->
+        <section id="contenedor-grid" class="my-5">
+            <h2 class="text-center mb-4">Explorando CSS Grid</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href="#" class="card h-100 text-decoration-none text-dark">
+                        <div class="card-body">
+                            <h3 class="card-title">Diseño Web</h3>
+                            <p class="card-text">Proyectos enfocados en diseño y maquetación web.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="card h-100 text-decoration-none text-dark">
+                        <div class="card-body">
+                            <h3 class="card-title">JavaScript</h3>
+                            <p class="card-text">Proyectos que utilizan JavaScript para interactividad.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="card h-100 text-decoration-none text-dark">
+                        <div class="card-body">
+                            <h3 class="card-title">Animaciones CSS</h3>
+                            <p class="card-text">Proyectos con animaciones y efectos visuales.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.facebook.com/" class="text-white me-3">Facebook</a>
+                <a href="https://twitter.com/" class="text-white me-3">Twitter</a>
+                <a href="https://www.instagram.com/" class="text-white">Instagram</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
     <script src="script.js"></script>
 </body>
 </html>

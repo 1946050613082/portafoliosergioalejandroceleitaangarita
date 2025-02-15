@@ -4,34 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <h1>Bienvenidos a todos y Todas a mi Portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <img src="images/aswd.png"  width="80px" alt="Logo" class="logo">
+                <!-- Menú de navegación -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="proyectos.html">PROYECTOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="introduccion">
-            <h2>Hola a todos y todas y a la persona que se tome el tiempo de ver este pequeño proyecto de presentación y de interacción académica, soy Sergio Alejandro Celeita Angarita.</h2>
-            <p>¡Bienvenidos a todos y todas a mi portafolio! Aquí podrás ver algunos de los proyectos que he realizado durante mi aprendizaje en clase. Me apasiona el diseño web, la programación, etc., y me encanta hacer deporte, cuidar de mí y de mi familia, y sobre todo, me encanta aprender cada tema o técnica que me ayuden en mi enriquecimiento profesional. Estoy emocionado de compartir mi trabajo con todos mis compañeros y mi instructor o tutor. Muchas gracias, toda mi colaboración está hacia ustedes o hacia el que requiera mi ayuda.</p>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section id="hero" class="bg-light py-5 text-center">
+        <div class="container">
+            <img src="images/dwd.png"  width="80px" alt="Imagen destacada" class="img-fluid mb-4">
+            <h1>Bienvenidos a Mi Portafolio</h1>
+            <p class="lead">Explora mis proyectos y conoce más sobre mi trabajo.</p>
+            <a href="#contacto" class="btn btn-primary btn-lg">¡Contáctame!</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="caracteristicas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Características</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="images/ert.png"  width="80px" alt="Icono 1" class="img-fluid mb-3">
+                    <h3>Diseño Web</h3>
+                    <p>Creación de sitios web modernos y responsivos.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/rwer.png"  width="80px" width="80px"alt="Icono 2" class="img-fluid mb-3">
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Implementación de interfaces interactivas.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/sas.png"  width="80px" alt="Icono 3" class="img-fluid mb-3">
+                    <h3>Optimización SEO</h3>
+                    <p>Mejora del posicionamiento en buscadores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section id="galeria" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/wqe.png"  width="80px" alt="Imagen 1" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/grt.png"  width="80px" alt="Imagen 2" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/klk.png"  width="80px" alt="Imagen 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"¡Excelente trabajo! Muy profesional."</p>
+                            <h5 class="card-title">- Juan Pérez</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Muy contento con los resultados."</p>
+                            <h5 class="card-title">- María Gómez</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Recomendado 100%."</p>
+                            <h5 class="card-title">- Carlos López</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Sergio Alejandro Celeita Angarita. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.facebook.com/" class="text-white me-3">Facebook</a>
+                <a href="https://twitter.com/" class="text-white me-3">Twitter</a>
+                <a href="https://www.instagram.com/" class="text-white">Instagram</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
